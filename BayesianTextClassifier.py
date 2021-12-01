@@ -86,7 +86,7 @@ class My_NB_Text_Classifier:
     
     ws = self._remove_spaces_of_lists(ws)
 
-    self.being_positive, self.being_negative = 1, 1
+    self.being_positive, self.being_negative = self.prob_positive, self.prob_negative
 
     #Evaluate of being POSITIVE
     for w in ws:
